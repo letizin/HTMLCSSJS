@@ -15,15 +15,8 @@
                 let total = prompt("자리수를 입력해 주세요");
                 let line = prompt("줄당 몇명인지 입력해 주세요");
                 let final = 1;
-                let set = total % line;
-                
-                if(set != 0){
-                    set = 1;
-                }
 
-                
-
-                for(let i = 0; i < (total/line)+set; i++){
+                for(let i = 0; i < (total/line)+1; i++){
                     document.write(`<tr>`)
                         for(let j = final; j <= line * i; j++){
                             if(j <= total){
